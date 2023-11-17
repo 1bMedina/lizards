@@ -11,7 +11,8 @@ body {
     font-size: 85%;
     border-style: solid;
     border-width: 5px;
-    border-color: #d8d8d8;
+    border-color: #a3b18a;
+    background-color: #3a5a40;
 }
 footer {
     font-size: 80%;
@@ -32,10 +33,10 @@ h1 {
 header {
     border-bottom-style: solid;
     border-bottom-width: 5px;
-    border-bottom-color: #d8d8d8;
+    border-bottom-color: #a3b18a;
 }
 nav {
-    background: #d8d8d8;
+    background: #a3b18a;
     font-weight: bold;
     float: left;
     height: 420px;
@@ -61,7 +62,7 @@ nav a {
     display: block;
     border: 2px solid #a1a1a1;
     padding: 2px 5px;
-    background: #add8e6;
+    background: #dad7cd;
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 5px 5px 5px #888888;
@@ -83,13 +84,16 @@ nav a {
     transform: rotateY(180deg);
 }
 p {
-    height: 50px;
-    background: #add8e6;
+    height: 60px;
+    width: 900px;
+    background: #588157;
     transition: width 3s, height 3s, transform 3s;
+    z-index: -1;
 }
 p:hover {
+    z-index: -1;
     width: 900px;
-    height: 50px;
+    height: 100px;
     transform: rotate(360deg);
 }
 #drop-menu {
@@ -100,7 +104,7 @@ p:hover {
     padding: 5px;
     height: 20px;
     max-height: 20px;
-    background: #add8e6;
+    background: #dad7cd;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #888888;
     font-family: oregonfont;
@@ -127,11 +131,14 @@ p:hover {
 .sub-menu li {
     list-style-type: none;
     display: block;
-    border: 2px solid #add8e6;
+    border: 2px solid #dad7cd;
     padding: 2px 5px;
     background: #d8d8d8;
     border-radius: 5px;
 }
 .sub-menu li:hover {
     border: 3px solid #bababa;
+}
+#img {
+    z-index: 2;
 }
