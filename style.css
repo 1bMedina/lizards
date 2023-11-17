@@ -52,9 +52,10 @@ header, nav, article, footer {
     display: block;
 }
 section {
-    background-image: url("../media/globe.png");
+    background-image: url("media/crestedgecko.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    resize: both;
 }
 nav a {
     display: block;
@@ -64,4 +65,73 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 5px 5px 5px #888888;
+}
+#img-rotate {
+    z-index: -1;
+    position: relative;
+    -ms-transform: rotate(345deg); /* Microsoft Edge */
+    -webkit-transform: rotate(345deg); /* Chrome and Safari */
+    transform: rotate(345deg);
+}
+#video-rotate {
+    -ms-transform: rotate(15deg); /* Microsoft Edge */
+    -webkit-transform: rotate(15deg); /* Chrome and Safari */
+    transform: rotate(15deg);
+}
+#logo-rotate {
+    -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+    transform: rotateY(180deg);
+}
+p {
+    height: 50px;
+    background: #add8e6;
+    transition: width 3s, height 3s, transform 3s;
+}
+p:hover {
+    width: 900px;
+    height: 50px;
+    transform: rotate(360deg);
+}
+#drop-menu {
+    width: 150px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid #a1a1a1;
+    padding: 5px;
+    height: 20px;
+    max-height: 20px;
+    background: #add8e6;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    font-family: oregonfont;
+    font-weight: bold;
+    font-size: 85%;
+    color: #0000a0;
+}
+#drop-menu:hover {
+    border: 3px solid #bababa;
+}
+#drop-menu:hover .sub-menu {
+    display: inline-block;
+}
+.sub-menu {
+    display: none;
+    width: 150px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.sub-menu li {
+    list-style-type: none;
+    display: block;
+    border: 2px solid #add8e6;
+    padding: 2px 5px;
+    background: #d8d8d8;
+    border-radius: 5px;
+}
+.sub-menu li:hover {
+    border: 3px solid #bababa;
 }
