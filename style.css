@@ -48,6 +48,8 @@ nav {
     float: right;
     clear: right;
     margin: 10px;
+    margin-right: 70px;
+    margin-bottom: 80px;
 }
 header, nav, article, footer {
     display: block;
@@ -139,6 +141,6 @@ p:hover {
 .sub-menu li:hover {
     border: 3px solid #bababa;
 }
-#img {
-    z-index: 2;
+img {
+    margin-right: 20px;
 }
