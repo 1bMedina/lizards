@@ -144,3 +144,36 @@ p:hover {
 img {
     margin-right: 20px;
 }
+#animation {
+    position: relative;
+    -webkit-animation-name: logoanimation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-name: logoanimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+@font-face {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+src: url("media/lizardlogo.png");
+}
+@keyframes logoanimation {
+    0% {
+        left: 110%;
+        top: 0px;
+    }
+    50% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
